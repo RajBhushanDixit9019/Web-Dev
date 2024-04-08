@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Forms in HTML</title>
+</head>
+
+<body>
+    <form action="#">
+        <fieldset>
+            <legend>Name</legend>
+            <label for="fname">First Name:</label>
+            <input type="text" name="fname" id="fname" placeholder="First Name" required />
+            <br />
+            <label for="lname">Last Name:</label>
+            <input type="text" name="lname" id="lname" placeholder="Last Name" required />
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Tech-Stack</legend>
+            <label for="lang">Choose you language:</label>
+            <select name="lang" id="lang">
+                <option value="--select--">--select lang--</option>
+                <optgroup label="front-End">
+                    <option value="HTML">HTML</option>
+                    <option value="CSS">CSS</option>
+                    <option value="JavaScript">JavaScript</option>
+                </optgroup>
+                <optgroup label="back-End">
+                    <option value="NodeJS">NodeJS</option>
+                    <option value="MongoDB">MongoDB</option>
+                </optgroup>
+            </select><br />
+        </fieldset>
+        <br />
+        <fieldset>
+            <legend>Your Message</legend>
+            <label for="message">Enter Your Message:</label><br />
+            <textarea name="message" id="message" placeholder="Enter your message"></textarea>
+            <br>
+            <label for="lang">Choose Language:</label>
+            <input type="text" list="ch" name="lang" id="lang">
+            <datalist id="ch">
+                <option value="HTML">HTML</option>
+                <option value="CSS">CSS</option>
+                <option value="JavaScipt">JavaScript</option>
+            </datalist>
+        </fieldset>
+        <br />
+        <button type="submit">Submit</button>
+        <button type="reset">Clear</button>
+    </form>
+</body>
+
+</html>
